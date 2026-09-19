@@ -1,3 +1,5 @@
+import React from 'react'
+
 function App() {
   const build = import.meta.env.VITE_BUILD || 'local'
 
