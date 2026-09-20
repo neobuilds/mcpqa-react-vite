@@ -5,6 +5,8 @@
 # index fallback for hash-free history entries (not required by hash routing).
 
 FROM node:22-alpine AS build
+# scripts/build.sh is a bash script; the Alpine image ships only sh.
+RUN apk add --no-cache bash git
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci --no-audit --no-fund
