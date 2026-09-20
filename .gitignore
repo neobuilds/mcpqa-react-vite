@@ -1,2 +1,11 @@
 node_modules
 dist
+.env
+.env.local
+VERSION
+*.log
+.DS_Store
+
+# Smoke test artifacts (never committed)
+.test-results/
+artifacts/
